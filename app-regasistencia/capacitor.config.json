@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "app-regasistencia",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

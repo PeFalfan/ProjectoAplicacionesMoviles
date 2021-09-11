@@ -1,0 +1,7 @@
+{
+  "name": "app-regasistencia",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
