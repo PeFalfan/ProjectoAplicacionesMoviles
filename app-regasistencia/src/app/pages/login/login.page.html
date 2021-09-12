@@ -1,9 +1,34 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>login</ion-title>
+    <ion-title>Log In</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <a href="https://www.duoc.cl/">
+    <img src="../../../assets/img/web_escudo.jpg">
+  </a>
+
+  <!-- Inputs con sus identificadores -->
+  <ion-item class="ion-margin">
+    <ion-label position="floating">Usuario</ion-label>
+    <ion-input type="text" [(ngModel)]='usuarioIngresado'></ion-input>
+  </ion-item>
+  <ion-item class="ion-margin">
+    <ion-label position="floating">Contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="contrasena"></ion-input>
+  </ion-item>
+
+  <!-- Boton para ingresar -->
+  <ion-button (click)="validarCredenciales()" class="ion-margin" color="success" expand="block" shape="round"
+    id="btn_ingresar">Ingresar</ion-button>
+
+  <!-- Enlace Recuperar contraseña -->
+  <a class="ion-margin" (click)="recuperarContrasena()">
+    <ion-label>
+      Recuperar contraseña
+    </ion-label>
+  </a>
 
 </ion-content>

@@ -1,9 +1,36 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>recover</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Recuperar contraseña</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <!-- Imagen de frustracion -->
+<a href="https://www.youtube.com/watch?v=GKnQGP67Xd0">
+  <img src="../../../assets/img/HAAAAAAAAAAAAAA.gif">
+</a>
+  
+
+  <!-- Inputs con sus identificadores -->
+  <ion-item class="ion-margin">
+    <ion-label position="floating">Usuario</ion-label>
+    <ion-input type="text" [(ngModel)]='usuarioConf'></ion-input>
+  </ion-item>
+  <ion-item class="ion-margin">
+    <ion-label position="floating">Contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="pass"></ion-input>
+  </ion-item>
+  <ion-item class="ion-margin">
+    <ion-label position="floating">Confirmar contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="passConf"></ion-input>
+  </ion-item>
+
+  <!-- Boton para ingresar -->
+  <ion-button (click)="cambiarContrasena()" class="ion-margin" color="success" expand="block" shape="round"
+    id="btn_ingresar">Cambiar</ion-button>
 
 </ion-content>
