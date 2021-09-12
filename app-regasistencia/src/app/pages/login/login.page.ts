@@ -14,6 +14,7 @@ export class LoginPage implements OnInit {
   usuarioIngresado: string;
   contrasena: string;
   actualizando: boolean = false;
+  passIncorrecta: boolean = false;
 
   constructor(public navController: NavController,
     public rutita: ActivatedRoute) {
@@ -32,10 +33,11 @@ export class LoginPage implements OnInit {
 
   validarCredenciales() {
     if (this.usuarioIngresado == this.usuarioRegistrado && this.contrasena == this.passRegistrada) {
+      this.passIncorrecta = false;
       alert("Ingresando...");
       this.ingresoCorrecto();
     } else {
-      alert("Credenciales Incorrectas...")
+      this.passIncorrecta = true;
     }
   }
 
