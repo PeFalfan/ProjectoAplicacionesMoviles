@@ -19,6 +19,12 @@
     <ion-label position="floating">Contraseña</ion-label>
     <ion-input type="password" [(ngModel)]="contrasena"></ion-input>
   </ion-item>
+  <ion-item class="ion-margin" *ngIf="passIncorrecta">
+    <span >
+      <h1>Credenciales Incorrectas...</h1>
+      <img src="../../../assets/img/HAAAAAAAAAAAAAA.gif">
+    </span>
+  </ion-item>
 
   <!-- Boton para ingresar -->
   <ion-button (click)="validarCredenciales()" class="ion-margin" color="success" expand="block" shape="round"
