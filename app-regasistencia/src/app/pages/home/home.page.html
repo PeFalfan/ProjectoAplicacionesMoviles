@@ -3,7 +3,9 @@
     <ion-title>Bienvenido </ion-title>
     <ion-title>{{ usuarioIngresado }}</ion-title>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/"></ion-back-button>
+      <ion-button (click)="volver()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>

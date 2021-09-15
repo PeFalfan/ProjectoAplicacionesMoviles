@@ -45,7 +45,8 @@ export class LoginPage implements OnInit {
     this.navController.navigateRoot('home',
       {
         queryParams: {
-          'usuario': this.usuarioIngresado
+          'usuario': this.usuarioIngresado,
+          'pass': this.passRegistrada
         }
       });
   }
